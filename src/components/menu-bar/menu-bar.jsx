@@ -255,15 +255,15 @@ class MenuBar extends React.Component {
 
             // Change logo for modes
             if (mode === '1990') {
-                document.getElementById('logo_img').src = ninetiesLogo;
+                document.getElementById('logo_img').src = scratchLogo;
             } else if (mode === '2020') {
-                document.getElementById('logo_img').src = catLogo;
+                document.getElementById('logo_img').src = scratchLogo;
             } else if (mode === '1920') {
-                document.getElementById('logo_img').src = oldtimeyLogo;
+                document.getElementById('logo_img').src = scratchLogo;
             } else if (mode === '220022BC') {
-                document.getElementById('logo_img').src = prehistoricLogo;
+                document.getElementById('logo_img').src = scratchLogo;
             } else {
-                document.getElementById('logo_img').src = this.props.logo;
+                document.getElementById('logo_img').src = scratchLogo;
             }
 
             this.props.onSetTimeTravelMode(mode);
