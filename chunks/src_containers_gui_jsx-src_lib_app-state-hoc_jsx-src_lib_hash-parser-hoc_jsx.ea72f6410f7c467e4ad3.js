@@ -48993,8 +48993,6 @@ class JsonParse {
     let value = this.currentJSON[KEY];
     if (typeof value == "object") {
       value = JSON.stringify(value);
-    } else if (typeof value != "string" || typeof value != "number" || typeof value != "boolean") {
-      value = value.toString();
     }
     return value;
   }
@@ -75203,4 +75201,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"scratch-vm","version":"4.5.11
 /***/ })
 
 }]);
-//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.e54a9a045f6687ab1941.js.map
+//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.ea72f6410f7c467e4ad3.js.map
