@@ -47993,10 +47993,20 @@ class ExtraUtilz {
       }
     });
   }
-  runArbitraryJS(_ref4) {
+  findTargetSprite(_ref4) {
+    let {
+      SPRITE
+    } = _ref4;
+    this.runtime.targets.forEach(target => {
+      if (!target.isStage && target.getName() === SPRITE) {
+        return target;
+      }
+    });
+  }
+  runArbitraryJS(_ref5) {
     let {
       JAVASCRIPT
-    } = _ref4;
+    } = _ref5;
     eval(JAVASCRIPT);
   }
 }
@@ -75501,4 +75511,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"scratch-vm","version":"4.5.11
 /***/ })
 
 }]);
-//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.c9ee7fea586959f4fb6f.js.map
+//# sourceMappingURL=src_containers_gui_jsx-src_lib_app-state-hoc_jsx-src_lib_hash-parser-hoc_jsx.3bb5ac640d0df07ab4c2.js.map
